@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习一下HTML</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css"> 
+</head>
+
+
+
+<body>
+    <article>
+        <header>
+            <h1>article元素使用方法</h1>
+            <p>发表日期：<time>2017/2/9</time></p>
+        </header>
+        　　<p>此标签里显示的是article整个文章的主要内容，1234，下面的section元素里是对该文章的评论</p>
+            <h2>评论</h2>
+            <article>
+                <header>
+                    <h3>发表者:nihanbo </h3>
+                    <p>1小时前</p>
+                </header>
+                    <p>这篇文章很不错啊，顶一下！</p>
+            </article>
+            <article>
+                <header>
+                    <h3>发表者：木木</h3>
+                    <p>1小时前</p>
+                </header>
+                    <p>这篇文章很不错啊，对article解释的很详细</p>
+            </article>
+    </article>
+    <!-- 块标签，始终占据一行 -->
+    <div>我要学习HTML</div>
+    <!-- 段落标签 -->
+    <p id="suanxiang">双向标签</p>
+    <img src="images/ifengLogo.png"" alt="这里有一张图片">
+    <p>我自我介绍一下</p>
+    <ul>
+        <li>倪涵博</li>
+        <li>男</li>
+        <li>研发部</li>
+        <li>PM</li>
+    </ul>
+    <a href="http://www.baidu.com">我要百度一下</a>
+
+
+    <!-- 标题标签 -->
+    <h1>静夜思 李白</h1>
+    <p><strong>李白</strong></p>
+    <ruby>李<rt>lǐ</rt></ruby>
+    <ruby>白<rt>bái</rt></ruby>
+    <article>https://www.php.cn/blog/detail/10430.html</article>
+    <h1>朱自清散文 匆匆</h1>
+    <!--字体加粗标签-->
+    <strong style="background-color:black;color:blueviolet;">燕子去了，有再来的时候；</strong>
+    <!--字体倾斜标签-->
+    <em style="background-color:blueviolet;color:burlywood;">杨柳枯了，有再青的时候；桃花谢了，有再开的时候。</em>
+    <div>但是，聪明的，你告诉我，我们的日子为什么一去不复返呢？ ——是有人偷了他们罢：那是谁？又藏在何处呢？是他们自己逃走了：现在又到了哪里呢？</div>
+    </p>
+    <h2>我的爱好</h2>
+    <!--无序列表标签-->
+    <ul>
+        <li>游泳</li>
+        <li>健身</li>
+        <li>音乐</li>
+    </ul>
+    <h2>星期</h2>
+    <!--有序列表标签-->
+    <ol>
+        <li>星期一</li>
+        <li>星期二</li>
+        <li>星期三</li>
+    </ol>
+
+    <!--自定义列表-->
+
+    <dl>
+
+        <dt>动物</dt>
+
+        <dd>鸡鸭鹅</dd>
+
+        <dt>植物</dt>
+
+        <dd>花草树</dd>
+
+    </dl>
+
+
+
+    <!--表格标签-->
+
+    <table border="1px" cellpadding="5" cellspacing="0" width="300">
+
+        <caption style="font: size 1.2rem;margin-bottom: 10px;">购物车</caption>
+
+        <thead>
+
+            <tr bgcolor="lightblue">
+
+                <th>序号</th>
+
+                <th>名称</th>
+
+                <th>价格</th>
+
+                <th>用途</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody align="center">
+
+            <tr>
+
+                <td>1</td>
+
+                <td>苹果</td>
+
+                <td>6元</td>
+
+                <td>吃</td>
+
+            </tr>
+
+            <tr>
+
+                <td>2</td>
+
+                <td>玩具</td>
+
+                <td>16元</td>
+
+                <td>玩</td>
+
+            </tr>
+
+            <tr>
+
+                <td>1</td>
+
+                <td>书</td>
+
+                <td>20元</td>
+
+                <td>看</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <!--表单标签-->
+
+    <h2>用户注册</h2>
+
+    <form action="" method="GET">
+
+        <div>
+            <label for="username">用户名：</label>
+
+            <input type="text" id="username" value="" placeholder="用户名不能少于6位">
+
+        </div>
+
+        <div>
+
+            <label>密码：<input type="password" name="password" placeholder="密码必须包括数字和字母" size="30"></label>
+
+        </div>
+
+        <div>
+
+            <input type="radio" name="gender" value="male" id="male"><label for="male">男</label>
+
+            </label><input type="radio" name="gender" value="female" id="female"><label for="female"></label>女</label>
+
+        </div>
+
+        <div>
+
+            <!--复选框-->
+
+            <input type="checkbox" name="hobby[]" value="game" id="game"><label for="game">打游戏</label>
+
+            <input type="checkbox" name="hobby[]" value="smoke" id="smoke"><label for="smoke">抽烟</label>
+
+            <input type="checkbox" name="hobby[]" value="program" id="program" checked><label for="编程">编程</label>
+
+        </div>
+
+        <div>
+
+            <label for="edu">你的学历：</label>
+
+            <select name="edu" id="edu">
+
+                <option value="1">幼儿园</option>
+
+                <option value="2">小学生</option>
+
+                <option value="3">大学生</option>
+
+            </select>
+
+        </div>
+
+        <div>
+
+            <label id="common">留言</label>
+
+            <textarea name="common" id="common" cols="30" rows="10" placeholder="请您留言"></textarea>
+
+        </div>
+
+        <input type="submit" value="注册">
+
+        <input type="reset" value="重置">
+
+
+
+    </form>
+
+    <!--照片-->
+
+    <img src="static/images/1.jpg" alt="帅哥" width="100">
+
+    <!--视频-->
+
+    <video src="static/images/Q.mp4" controls="controls" width="100"></video>
+
+</body>
+
+</body>
+
+</html>
+
+<body>
+
+    <body>
+        <!-- 块标签，始终占据一行 -->
+        <div>我要学习HTML</div>
+        <!-- 段落标签 -->
+        <p>双向标签</p>
+        <!--标题标签-->
+        <h1>朱自清散文 匆匆</h1>
+
+        <!--字体加粗标签-->
+
+        <strong style="background-color:black;color:blueviolet;">燕子去了，有再来的时候；</strong>
+
+        <!--字体倾斜标签-->
+
+        <em style="background-color:blueviolet;color:burlywood;">杨柳枯了，有再青的时候；桃花谢了，有再开的时候。</em>
+
+        <div>但是，聪明的，你告诉我，我们的日子为什么一去不复返呢？ ——是有人偷了他们罢：那是谁？又藏在何处呢？是他们自己逃走了：现在又到了哪里呢？</div>
+
+        </p>
+
+        <h2>我的爱好</h2>
+
+        <!--无序列表标签-->
+
+        <ul>
+
+            <li>游泳</li>
+
+            <li>健身</li>
+
+            <li>音乐</li>
+
+        </ul>
+
+        <h2>星期</h2>
+
+        <!--有序列表标签-->
+
+        <ol>
+
+            <li>星期一</li>
+
+            <li>星期二</li>
+
+            <li>星期三</li>
+
+        </ol>
+
+        <!--自定义列表-->
+
+        <dl>
+
+            <dt>动物</dt>
+
+            <dd>鸡鸭鹅</dd>
+
+            <dt>植物</dt>
+
+            <dd>花草树</dd>
+
+        </dl>
+
+
+
+        <!--表格标签-->
+
+        <table border="1px" cellpadding="5" cellspacing="0" width="300">
+
+            <caption style="font: size 1.2rem;margin-bottom: 10px;">购物车</caption>
+
+            <thead>
+
+                <tr bgcolor="lightblue">
+
+                    <th>序号</th>
+
+                    <th>名称</th>
+
+                    <th>价格</th>
+
+                    <th>用途</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody align="center">
+
+                <tr>
+
+                    <td>1</td>
+
+                    <td>苹果</td>
+
+                    <td>6元</td>
+
+                    <td>吃</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>2</td>
+
+                    <td>玩具</td>
+
+                    <td>16元</td>
+
+                    <td>玩</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>1</td>
+
+                    <td>书</td>
+
+                    <td>20元</td>
+
+                    <td>看</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <!--表单标签-->
+
+        <h2>用户注册</h2>
+
+        <form action="" method="GET">
+
+            <div>
+
+                <label for="username">用户名：</label>
+
+                <input type="text" id="username" value="" placeholder="用户名不能少于6位">
+
+            </div>
+
+            <div>
+
+                <label>密码：<input type="password" name="password" placeholder="密码必须包括数字和字母" size="30"></label>
+
+            </div>
+
+            <div>
+
+                <input type="radio" name="gender" value="male" id="male"><label for="male">男</label>
+
+                </label><input type="radio" name="gender" value="female" id="female"><label for="female"></label>女
+                </label>
+
+            </div>
+
+            <div>
+
+                <!--复选框-->
+
+                <input type="checkbox" name="hobby[]" value="game" id="game"><label for="game">打游戏</label>
+
+                <input type="checkbox" name="hobby[]" value="smoke" id="smoke"><label for="smoke">抽烟</label>
+
+                <input type="checkbox" name="hobby[]" value="program" id="program" checked><label for="编程">编程</label>
+
+            </div>
+
+            <div>
+
+                <label for="edu">你的学历：</label>
+
+                <select name="edu" id="edu">
+
+                    <option value="1">幼儿园</option>
+
+                    <option value="2">小学生</option>
+
+                    <option value="3">大学生</option>
+
+                </select>
+
+            </div>
+
+            <div>
+
+                <label id="common">留言</label>
+
+                <textarea name="common" id="common" cols="30" rows="10" placeholder="请您留言"></textarea>
+
+            </div>
+
+            <input type="submit" value="注册">
+
+            <input type="reset" value="重置">
+        </form>
+
+        <!--照片-->
+
+        <img src="static/images/1.jpg" alt="帅哥" width="100">
+
+        <!--视频-->
+
+        <video src="static/images/Q.mp4" controls="controls" width="100"></video>
+        
+    <button>切换用户</button>
+    <script src="scripts/main.js" defer></script>
+
+    </body>
+
+    </html>
